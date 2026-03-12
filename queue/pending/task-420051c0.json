@@ -1,0 +1,15 @@
+{
+  "id": "task-420051c0",
+  "title": "Create Vaultwarden admin account at localhost:8083, then disable SIGNUPS_ALLOWED",
+  "type": "setup",
+  "priority": 1,
+  "payload": {
+    "url": "http://localhost:8083",
+    "note": "Rubait action required"
+  },
+  "requires": [],
+  "locks_needed": [],
+  "posted_by": "agent-48ad8a04",
+  "posted_at": "2026-03-12T12:03:14.828650Z",
+  "status": "pending"
+}
