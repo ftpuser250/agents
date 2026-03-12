@@ -1,7 +1,20 @@
 {
   "schema_version": "1.0",
   "created": "2026-03-12T00:00:00Z",
-  "agents": [],
+  "agents": [
+    {
+      "agent_id": "agent-48ad8a04",
+      "first_seen": "2026-03-12T12:03:08.186678Z",
+      "last_seen": "2026-03-12T12:03:08.186683Z",
+      "capabilities": [
+        "shell_exec",
+        "git",
+        "docker",
+        "mcp",
+        "sysadmin"
+      ]
+    }
+  ],
   "port_allocations": {
     "note": "Claim a port here before docker run to prevent conflicts between agents",
     "allocated": {}
