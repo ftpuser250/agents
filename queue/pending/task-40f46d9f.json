@@ -1,0 +1,16 @@
+{
+  "id": "task-40f46d9f",
+  "title": "Run ~/build_all_security_mcps.sh \u2014 build 15 security MCP tools",
+  "type": "install",
+  "priority": 2,
+  "payload": {
+    "cmd": "screen -S mcp-build bash ~/build_all_security_mcps.sh"
+  },
+  "requires": [],
+  "locks_needed": [
+    "docker-build"
+  ],
+  "posted_by": "agent-48ad8a04",
+  "posted_at": "2026-03-12T12:03:09.984597Z",
+  "status": "pending"
+}
