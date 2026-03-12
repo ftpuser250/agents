@@ -13,6 +13,17 @@
         "mcp",
         "sysadmin"
       ]
+    },
+    {
+      "agent_id": "agent-e135e823",
+      "first_seen": "2026-03-12T12:42:17.772062Z",
+      "last_seen": "2026-03-12T12:42:17.772070Z",
+      "capabilities": [
+        "shell_exec",
+        "git",
+        "docker",
+        "mcp"
+      ]
     }
   ],
   "port_allocations": {
