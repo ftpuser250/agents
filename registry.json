@@ -24,6 +24,17 @@
         "docker",
         "mcp"
       ]
+    },
+    {
+      "agent_id": "agent-ef8477fc",
+      "first_seen": "2026-03-12T13:14:58.324230Z",
+      "last_seen": "2026-03-12T13:14:58.324236Z",
+      "capabilities": [
+        "shell_exec",
+        "git",
+        "docker",
+        "mcp"
+      ]
     }
   ],
   "port_allocations": {
