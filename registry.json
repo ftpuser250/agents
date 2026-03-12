@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "created": "2026-03-12T00:00:00Z",
+  "agents": [],
+  "port_allocations": {
+    "note": "Claim a port here before docker run to prevent conflicts between agents",
+    "allocated": {}
+  },
+  "shared_resources": [
+    "webhook_pc.py",
+    "context.json",
+    "HANDOFF.md",
+    "relay-requests",
+    "relay-responses",
+    "install_all.sh"
+  ]
+}
