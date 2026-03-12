@@ -8,6 +8,7 @@ Provides: register_agent, heartbeat, lock_resource, check_lock, release_lock,
 """
 
 import uuid, json, os, subprocess, datetime, time, hashlib, threading
+from datetime import timezone
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 
@@ -19,7 +20,7 @@ _LOCK_DEFAULT_TTL = 180  # seconds
 # ─── Helpers ──────────────────────────────────────────────────────────────────
 
 def _now():
-    return datetime.datetime.utcnow().isoformat() + "Z"
+    return datetime.datetime.now(timezone.utc).isoformat().replace("+00:00","Z")
 
 def _read_json(path, default=None):
     try:
