@@ -1,0 +1,15 @@
+{
+  "id": "task-57d2b85b",
+  "title": "Set VIRUSTOTAL_API_KEY on mcp-virustotal once key is available",
+  "type": "config",
+  "priority": 3,
+  "payload": {
+    "container": "mcp-virustotal",
+    "env_var": "VIRUSTOTAL_API_KEY"
+  },
+  "requires": [],
+  "locks_needed": [],
+  "posted_by": "agent-48ad8a04",
+  "posted_at": "2026-03-12T12:03:11.517626Z",
+  "status": "pending"
+}
