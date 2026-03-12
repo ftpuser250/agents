@@ -1,0 +1,15 @@
+{
+  "id": "task-c0441e87",
+  "title": "Set GEMINI_API_KEY on mcp-gemini-image once key is available",
+  "type": "config",
+  "priority": 3,
+  "payload": {
+    "container": "mcp-gemini-image",
+    "env_var": "GEMINI_API_KEY"
+  },
+  "requires": [],
+  "locks_needed": [],
+  "posted_by": "agent-48ad8a04",
+  "posted_at": "2026-03-12T12:03:13.565126Z",
+  "status": "pending"
+}
