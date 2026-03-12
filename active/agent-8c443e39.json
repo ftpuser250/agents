@@ -1,0 +1,14 @@
+{
+  "agent_id": "agent-8c443e39",
+  "started_at": "2026-03-12T16:14:31.810334Z",
+  "last_seen": "2026-03-12T16:14:31.810351Z",
+  "status": "idle",
+  "current_task": null,
+  "ttl_seconds": 300,
+  "capabilities": [
+    "shell_exec",
+    "git",
+    "docker",
+    "mcp"
+  ]
+}
