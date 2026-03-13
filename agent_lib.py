@@ -7,7 +7,9 @@ Provides: register_agent, heartbeat, lock_resource, check_lock, release_lock,
           list_active_agents, get_queue
 """
 
-import uuid, json, os, subprocess, datetime, time, hashlib, threading
+import uuid, json, os, subprocess, datetime, time, hashlib, threading, logging
+
+_log = logging.getLogger("agent_lib")
 from datetime import timezone
 
 # ─── Config ───────────────────────────────────────────────────────────────────
@@ -95,8 +97,8 @@ def register_agent(capabilities=None):
             time.sleep(60)
             try:
                 heartbeat()
-            except Exception:
-                pass
+            except Exception as e:
+                _log.warning("[agent_lib] heartbeat failed: %s", e)
 
     _heartbeat_thread = threading.Thread(target=_hb_loop, daemon=True)
     _heartbeat_thread.start()
@@ -360,8 +362,8 @@ def list_active_agents():
             if age <= beat.get("ttl_seconds", _HEARTBEAT_TTL):
                 beat["age_seconds"] = int(age)
                 agents.append(beat)
-        except Exception:
-            pass
+        except Exception as e:
+            _log.debug("[agent_lib] skipping malformed agent entry: %s", e)
     return agents
 
 
